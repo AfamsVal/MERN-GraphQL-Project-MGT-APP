@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
 import { GET_CLIENTS } from "../queries/clientQueries";
-import Client from "./Client";
+import ClientRow from "./ClientRow";
 import Loader from "./Loader";
 
 const Clients = () => {
@@ -25,7 +25,7 @@ const Clients = () => {
             </thead>
             <tbody>
               {data.clients.map((client) => (
-                <Client key={client.id} client={client} />
+                <ClientRow key={client.id} client={client} />
               ))}
             </tbody>
           </table>

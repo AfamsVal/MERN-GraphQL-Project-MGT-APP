@@ -54,8 +54,10 @@ export default function AddProjectModal() {
             data-bs-target="#addProjectModal"
           >
             <div className="d-flex align-items-center">
-              <FaList className="icon" />
-              <div>New Project</div>
+              <div>
+                {" "}
+                <FaList className="icon" /> New Project
+              </div>
             </div>
           </button>
 
